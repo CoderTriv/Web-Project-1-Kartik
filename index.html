@@ -200,15 +200,63 @@
             an ID.
           -->
           <fieldset form="what-grade-are-you-in">
+            <!--
+              This is a legend, what it does is that
+              it gives a heading on the fieldset making it,
+              visualy interesting and can help people with disabillaties,
+              needing such as screen-readers.
+            -->
             <legend>
               What grade are you in if you are still in school? [Not Required]
             </legend>
 
+            <!--
+              This is an input, what IT does
+              is that it makes something that the user
+              can use or "fiddle" with.
+
+              This input has a type of being a radio,
+              what it does is that it makes a circle
+              type of ul but if you click or tap on it,
+              it will light up with a blue light.
+
+              This has a name of grade and so
+              does each other input that's a radio
+              because if they didn't have the same name
+              when the user try's to interact it will all
+              be working even though the developper
+              wants to make every radio to automatically
+              change, because of the same name
+              it is more user friendly.
+
+              The "ID" is used to help the "lable" to do it's
+              job by placing inside the "lable" the same "ID".
+
+              This input is asking the user what grade they are
+              in, this grade being Kindergarden, more known as
+              k/K because of the acronym K-12.
+            -->
             <input
               type="radio"
               id="kindergarden"
               value="kindergarden"
               name="grade" />
+            <!--
+              lable helps descibe the input,
+              since the input has an "ID" we place
+              "for" which tells the computer that 
+              "This lable is for this certain input."
+
+              Lable is EXTREMLY useful for people
+              with screen readers and
+              people without disabilaties as this
+              can help people read what's required
+              or what the input is/wants.
+
+              If every input had different "IDs"
+              the computer will be confused and the
+              code will not work properly.
+            -->
             <lable for="kindergarden">Kindergarden</lable>
             <br />
 
