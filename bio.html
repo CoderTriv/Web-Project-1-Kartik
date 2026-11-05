@@ -22,11 +22,6 @@
         <ul>
           <li><a href="#whats-my-name">What's my name?</a></li>
           <li><a href="#what-are-my-hobbies">What are my hobbies?</a></li>
-          <!--
-            NOTE TO FUTURE SELF!:
-            The "Which one's YOUR favorite?" is a,
-            survey
-          -->
           <li>
             <a href="#whats-your-favorite">Which one's <b>YOUR</b> favorite?</a>
           </li>
@@ -49,10 +44,183 @@
     </header>
     <main>
       <section id="whats-my-name">
-        <h2>My name is...</h2>
+        <h2>My name is Kartik</h2>
+        <p>
+          My actual name is Kartik Trivedi but people just call me Kartik as it
+          makes their lives easier and the name <u>"Trivedi"</u> is my 2<sup
+            >nd</sup
+          >
+          name!
+        </p>
+        <p>
+          I have a little brother, my mom and my dad. <b><u>AND ME!</u></b>
+        </p>
       </section>
       <section id="what-are-my-hobbies"></section>
-      <section id="whats-your-favorite"></section>
+      <h2>What are my Hobbies?</h2>
+      <p>My hobbies are:</p>
+      <ul>
+        <li>Playing with my little brother</li>
+        <ul>
+          <li>Play roblox with him</li>
+          <li>Talk to him after he gets back from school</li>
+          <li>Watch TV with him</li>
+          <li>Play board games/card games with him</li>
+        </ul>
+        <li>Play/talk with friends after school/during weekends</li>
+        <ul>
+          <li>Play roblox</li>
+          <li>Play minecraft</li>
+          <li>
+            Hang out with them and talk or play with them outside or inside
+          </li>
+        </ul>
+        <li>Play sports</li>
+        <ul>
+          <li>Badminton</li>
+          <li>field hockey (its a type of indien floor hockey)</li>
+          <li>Vollyball</li>
+          <li>Basket Ball</li>
+        </ul>
+        <li>Do some math</li>
+        <ul>
+          <li>Help others (usually my little brother)</li>
+          <li>Help some friends</li>
+        </ul>
+      </ul>
+      <section id="whats-your-favorite">
+        <h2>
+          <b
+            ><u
+              >This Is A School Project, I Do Not Recomend To Put Actual
+              Information</u
+            ></b
+          >
+        </h2>
+        <!--
+          This is a form! What it does is it makes a survey type
+          of area that allows the developer to add inputs
+          for the user to interact with.
+
+          This form has an ID making it easier to make a fieldset and
+          to link the fieldset towards the form.
+
+          This form has a method="get" which saves the form
+          that the user submited and places all the information
+          on the search bar.
+        -->
+        <form id="whats-your-favorite" name="favorite" method="get">
+          <!--
+            This is a fieldset! A fieldset makes a fence like area/rectangle
+            type of shape.
+
+            What form means is that it links towards the form, thats why we placed
+            an ID.
+          -->
+          <fieldset form="whats-your-favorite">
+            <!--
+              This is a legend, what it does is that
+              it gives a heading on the fieldset making it,
+              visualy interesting and can help people with disabillaties,
+              needing such as screen-readers.
+            -->
+            <legend>What are your favorite hobbies? [not required]</legend>
+            <!--
+              This is an input, what IT does
+              is that it makes something that the user
+              can use or "fiddle" with.
+
+              This input has a type of being a radio,
+              what it does is that it makes a circle
+              type of ul but if you click or tap on it,
+              it will light up with a blue light.
+
+              The "ID" is used to help the "lable" to do it's
+              job by placing inside the "lable" the same "ID".
+            -->
+            <input type="radio" id="play-sports" name="sports" />
+            <!--
+              lable helps descibe the input,
+              since the input has an "ID" we place
+              "for" which tells the computer that 
+              "This lable is for this certain input."
+
+              Lable is EXTREMLY useful for people
+              with screen readers and
+              people without disabilaties as this
+              can help people read what's required
+              or what the input is/wants.
+
+              If every input had different "IDs"
+              the computer will be confused and the
+              code will not work properly.
+            -->
+            <lable for="play-sports">Playing Sports</lable>
+            <br />
+
+            <input type="radio" id="play-video-games" name="video-games" />
+            <lable for="play-video-games">Play video games</lable>
+            <h3>What video game?</h3>
+            <!--
+            This is a text-area input.
+            What it does is that it makes
+            a text box for the user to fiddle with.
+
+            The developper can choose how
+            many row's the user can do before
+            being able to start needing to
+            scroll down.
+
+            The developper can also choose
+            how many collums there is in
+            the text-area.
+          -->
+            <textarea
+              id="what-school"
+              name="what-school"
+              rows="8"
+              cols="40"></textarea>
+            <br />
+
+            <input
+              type="radio"
+              id="play-with-friends"
+              name="play-with-friends" />
+            <lable for="play-with-friends">Play with friends</lable>
+          </fieldset>
+          <fieldset form="whats-your-favorite">
+            <legend>Whats your favorite color?</legend>
+            <label for="favcolor">Select your favorite color:</label>
+            <!--
+              This is an input that lets the user
+              select a color of their choice!
+            -->
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000" />
+          </fieldset>
+          <br />
+          <br />
+
+          <!--
+            This is a submit input,
+            as you can read it make's a
+            submit button to let the computer
+            to know that the user is finished.
+
+            If there was something in the form
+            that was required and not filled out,
+            the computer will notify the user that they
+            must fill it out to move on from the form.
+
+            It reset's the user's perspective
+            all the way back to the top.
+
+            Because of the method="get"
+            everything that the user placed will
+            be placed in the URL above.
+          -->
+          <input type="submit" />
+        </form>
+      </section>
     </main>
     <footer>
       <p>
