@@ -348,6 +348,20 @@
           </select>
 
           <h2>What School Do You Go To? (Name Of School) [Not Required]</h2>
+          <!--
+            This is a text-area input.
+            What it does is that it makes
+            a text box for the user to fiddle with.
+
+            The developper can choose how
+            many row's the user can do before
+            being able to start needing to
+            scroll down.
+
+            The developper can also choose
+            how many collums there is in
+            the text-area.
+          -->
           <textarea
             id="what-school"
             name="what-school"
@@ -355,13 +369,33 @@
             cols="40"></textarea>
           <br />
 
+          <!--
+            This is a submit input,
+            as you can read it make's a
+            submit button to let the computer
+            to know that the user is finished.
+
+            If there was something in the form
+            that was required and not filled out,
+            the computer will notify the user that they
+            must fill it out to move on from the form.
+
+            It reset's the user's perspective
+            all the way back to the top.
+
+            Because of the method="get"
+            everything that the user placed will
+            be placed in the URL above.
+          -->
           <input type="submit" />
         </form>
       </section>
     </main>
     <footer>
       <p>
-        <i><b>&#169;Kartik, November 3<sup>rd</sup>, 2026</b></i>
+        &#169;<u
+          ><i><b>Kartik, November 3<sup>rd</sup>, 2026</b></i></u
+        >
       </p>
     </footer>
   </body>
