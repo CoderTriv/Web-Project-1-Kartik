@@ -156,6 +156,47 @@
               code will not work properly.
             -->
             <lable for="play-sports">Playing Sports</lable>
+            <p>Which sport?</p>
+            <!--
+            This is a select input. It's a special
+            type of input that isn't a non-void element.
+
+            A select input is a drop-down that contains elements
+            inside called option tags.
+
+            This select input is for asking if
+            the user is in a College, University 
+            or none in general.
+          -->
+            <select>
+              <!--
+                This is an option element,
+                it gives the drop-down selection
+                some options to apear.
+              -->
+              <option>Basket Ball</option>
+              <option>Badminton</option>
+              <option>Floor Hockey</option>
+              <option>Field Hockey</option>
+              <option>Ice Hockey</option>
+              <option>Base Ball</option>
+              <option>Other</option>
+            </select>
+            <br />
+            <label for="if-other-then-what"
+              >If you choose other then what is the sport?</label
+            >
+            <!--
+              This input makes a text box for the user
+              to interact with, this is usually seen
+              for area's asking like:
+              Username:"user enters username"
+              Password:"user enters password"
+
+              This can be found almost everywhere
+              like amazon and etc.
+            -->
+            <input id="if-other-then-what" name="sports" type="text" />
             <br />
 
             <input type="radio" id="play-video-games" name="video-games" />
@@ -201,19 +242,9 @@
             <legend>Whats your name?</legend>
             <label for="user-name">Place it in the box under!</label>
             <br />
-            <!--
-              This input makes a text box for the user
-              to interact with, this is usually seen
-              for area's asking like:
-              Username:"user enters username"
-              Password:"user enters password"
 
-              This can be found almost everywhere
-              like amazon and etc.
-            -->
             <input type="text" id="user-name" name="user-name" />
           </fieldset>
-          <br />
           <br />
 
           <!--
